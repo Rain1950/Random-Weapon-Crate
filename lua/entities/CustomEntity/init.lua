@@ -6,7 +6,6 @@ include("entities/CustomEntity/shared.lua")
 local initialColor = nil //declare initial color
 function ENT:Initialize()
     self:SetModel("models/items/ammocrate_smg1.mdl")
-    self:PhysicsInit(SOLID_BBOX)
     self:SetSolid(SOLID_VPHYSICS)
     self:SetMoveType(MOVETYPE_NONE)  // make crate static 
     self:DrawShadow(false )  //remove shadow from crate
